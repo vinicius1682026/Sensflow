@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- ══ SEO META TAGS ══ -->
+<meta content="Converta sua sensibilidade ADS e Scope com precisão matemática. Configure o multiplicador de mira, escolha o tipo de escopo e obtenha a sens exata em qualquer jogo FPS." name="description"/>
+<meta content="conversor ads sensibilidade, ads sensitivity converter, scope sensitivity, multiplicador mira fps, ads multiplier gaming, sensitivity scope converter" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="SENSFLOW" name="author"/>
+<meta content="pt-BR" name="language"/>
+<link href="https://sensflow.tech/pt/ads-converter" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="SENSFLOW" property="og:site_name"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="Conversão ADS / Scope — Multiplicador de Mira | SENSFLOW" property="og:title"/>
+<meta content="Converta sensibilidade ADS e Scope entre jogos FPS. Configure o multiplicador de mira e obtenha a sens exata para cada escopo." property="og:description"/>
+<meta content="https://sensflow.tech/pt/ads-converter" property="og:url"/>
+<meta content="https://sensflow.tech/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@sensflow" name="twitter:site"/>
+<meta content="Conversão ADS / Scope — Multiplicador de Mira | SENSFLOW" name="twitter:title"/>
+<meta content="Converta sensibilidade ADS e Scope entre jogos FPS. Configure o multiplicador de mira e obtenha a sens exata para cada escopo." name="twitter:description"/>
+<meta content="https://sensflow.tech/og-image.png" name="twitter:image"/>
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SENSFLOW — Conversor ADS / Scope",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+  "description": "Conversor de sensibilidade ADS e Scope gratuito. Configure o multiplicador de mira e converta entre Valorant, CS2, Apex, Fortnite e 35+ jogos.",
+  "url": "https://sensflow.tech/ads-converter"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://sensflow.tech/" },
+    { "@type": "ListItem", "position": 2, "name": "Conversão ADS", "item": "https://sensflow.tech/ads-converter" }
+  ]
+}
+</script>
+<title>Conversão ADS e Scope — Multiplicador de Mira FPS | SENSFLOW</title>
+<!-- Favicon -->
+<link href="/favicon.svg?v=4" rel="icon" type="image/svg+xml"/>
+<link href="/favicon-96x96.png?v=4" rel="icon" sizes="96x96" type="image/png"/>
+<link href="/favicon-48x48.png?v=4" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/favicon-32x32.png?v=4" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png?v=4" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/favicon.ico?v=4" rel="shortcut icon"/>
+<link href="/apple-touch-icon.png?v=4" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<!-- hreflang — SEO Internacional -->
+<link href="https://sensflow.tech/pt/ads-converter" hreflang="pt-BR" rel="alternate"/>
+<link href="https://sensflow.tech/en/ads-converter" hreflang="en" rel="alternate"/>
+<link href="https://sensflow.tech/es/ads-converter" hreflang="es" rel="alternate"/>
+<link href="https://sensflow.tech/pt/ads-converter" hreflang="x-default" rel="alternate"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="/css/style.css?v=4" rel="stylesheet"/>
+<style>
+    .ads-hero{padding:72px 0 50px;}
+    .ads-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+    .info-card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:22px;margin-bottom:16px;}
+    .info-card h4{font-size:1rem;margin-bottom:8px;}
+    .info-card p{font-size:.85rem;color:var(--muted);line-height:1.65;}
+    .info-card .tag{font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--accent-2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;display:block;}
+    .highlight{color:var(--accent);font-weight:600;}
+    .formula-inline{background:#0E1014;border:1px solid var(--border);border-radius:8px;padding:10px 14px;font-family:'JetBrains Mono',monospace;font-size:.76rem;color:var(--accent-2);line-height:1.9;margin:10px 0 0;}
+    .mult-presets{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;}
+    .mult-preset{padding:7px 14px;border-radius:8px;border:1px solid var(--border);font-size:.78rem;font-weight:600;cursor:pointer;background:none;color:var(--muted);font-family:'JetBrains Mono',monospace;transition:all .2s;}
+    .mult-preset:hover,.mult-preset.active{border-color:var(--accent-2);color:var(--accent-2);background:rgba(63,224,255,.07);}
+    .scope-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px;padding-top:20px;border-top:1px dashed var(--border);}
+    .scope-card{background:#0E1014;border:1px solid var(--border);border-radius:12px;padding:16px;text-align:center;}
+    .sc-val{font-family:'JetBrains Mono',monospace;font-size:1.3rem;font-weight:600;color:var(--accent);}
+    .sc-sub{font-size:.62rem;color:var(--accent-2);text-transform:uppercase;letter-spacing:.07em;margin-top:4px;}
+    .sc-lbl{font-size:.7rem;color:var(--muted);margin-top:6px;}
+    .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+    @media(max-width:900px){
+      .ads-hero-grid{grid-template-columns:1fr;}
+      .scope-grid{grid-template-columns:1fr 1fr;}
+      .info-grid{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+<a class="logo" href="/pt/"><div class="logo-mark">SF</div>SENSFLOW</a>
+<div class="nav-links"><a href="/pt/">Início</a><a href="/pt/sensitivity-converter">Conversor</a><a class="active" href="/pt/ads-converter">ADS / Scope</a><a href="/pt/about">Sobre</a><a href="/pt/contact">Contato</a><a href="/pt/privacy">Privacidade</a></div>
+<div class="lang-switch"><button class="lang-opt active" data-lang="pt"><span class="flag">🇧🇷</span><span class="code">PT</span></button><button class="lang-opt" data-lang="en"><span class="flag">🇺🇸</span><span class="code">EN</span></button><button class="lang-opt" data-lang="es"><span class="flag">🇪🇸</span><span class="code">ES</span></button></div>
+<a class="nav-cta" href="/pt/sensitivity-converter">Conversor Hipfire</a>
+</div>
+</nav>
+<header class="ads-hero">
+<div class="wrap ads-hero-grid">
+<div>
+<span class="eyebrow"><span class="dot"></span> O Santo Graal</span>
+<h1>Conversão de <span>ADS / Scope</span> com precisão real.</h1>
+<p class="lead">Configure o multiplicador de mira e obtenha a sensibilidade exata — preservando a distância física nos dois jogos.</p>
+<div style="margin-top:28px;">
+<div class="info-card">
+<span class="tag">O que é o multiplicador ADS?</span>
+<p>É a relação entre velocidade hipfire e mira ADS. <span class="highlight">1.0</span> = igual. <span class="highlight">0.85</span> = 15% mais lento. Pros usam entre <span class="highlight">0.80 e 1.0</span>.</p>
+</div>
+<div class="info-card">
+<span class="tag">Como funciona o cálculo?</span>
+<p>Calculamos o cm/360° do hipfire, dividimos pelo multiplicador para obter o cm/360° ADS e convertemos para o jogo de destino.</p>
+<div class="formula-inline">cm_ads = cm_hipfire ÷ multiplicador<br/>sens_ads → sens no jogo destino</div>
+</div>
+</div>
+</div>
+<!-- CONSOLE ADS -->
+<div class="console">
+<div class="console-head">
+<h3>Conversor ADS / Scope</h3>
+<div style="display:flex;align-items:center;gap:10px;">
+<button class="info-btn" id="btnExplain" title="Como funciona?">i</button>
+<div class="led"><span></span><span></span><span></span></div>
+</div>
+</div>
+<div class="field-row">
+<div class="field"><label>Jogo de origem</label><select id="fromGame"></select></div>
+<div class="field"><label>Jogo de destino</label><select id="toGame"></select></div>
+</div>
+<div class="field-row">
+<div class="field"><label>Sens hipfire</label><input id="fromSens" min="0" step="0.01" type="number" value="0.40"/></div>
+<div class="field"><label>DPI de origem</label><input id="fromDpi" min="100" step="50" type="number" value="800"/></div>
+</div>
+<div class="field-row">
+<div class="field"><label>DPI de destino</label><input id="toDpi" min="100" step="50" type="number" value="800"/></div>
+<div class="field" style="display:flex;align-items:flex-end;">
+<button class="btn-ghost" id="btnReset" style="width:100%;padding:11px 12px;font-size:.88rem;">↺ Resetar</button>
+</div>
+</div>
+<div class="section-divider"><span>Multiplicador ADS</span></div>
+<div class="field">
+<label>Multiplicador de mira (ADS) <button class="info-btn" id="btnExplain2">i</button></label>
+<input id="adsMult" max="2.00" min="0.01" step="0.01" type="number" value="1.00"/>
+</div>
+<div style="margin-top:8px;">
+<p style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Presets comuns</p>
+<div class="mult-presets">
+<button class="mult-preset active" data-mult="1.00">1.00× (Igual)</button>
+<button class="mult-preset" data-mult="0.85">0.85×</button>
+<button class="mult-preset" data-mult="0.80">0.80×</button>
+<button class="mult-preset" data-mult="0.75">0.75×</button>
+<button class="mult-preset" data-mult="0.50">0.50×</button>
+</div>
+</div>
+<div class="section-divider" style="margin-top:18px;"><span>Resultados</span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;">
+<div style="background:#0E1014;border:1px solid var(--border);border-radius:10px;padding:14px;">
+<p style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Hipfire convertido</p>
+<p id="resultSens" style="font-family:'JetBrains Mono',monospace;font-size:1.7rem;font-weight:600;color:var(--text);">—</p>
+<p id="resultCm" style="font-size:.7rem;color:var(--muted);margin-top:4px;">— cm/360°</p>
+</div>
+<div style="background:#0E1014;border:1px solid var(--border);border-radius:10px;padding:14px;">
+<p style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">eDPI Hipfire</p>
+<p id="resultEdpi" style="font-family:'JetBrains Mono',monospace;font-size:1.7rem;font-weight:600;color:var(--text);">—</p>
+<p id="resultIn" style="font-size:.7rem;color:var(--muted);margin-top:4px;">— in/360°</p>
+</div>
+</div>
+<div class="scope-grid">
+<div class="scope-card">
+<div class="sc-val" id="adsResultSens">—</div>
+<div class="sc-sub">Sens ADS</div>
+<div class="sc-lbl" id="adsMultLabel">×1.00</div>
+</div>
+<div class="scope-card">
+<div class="sc-val" id="adsResultEdpi">—</div>
+<div class="sc-sub">eDPI ADS</div>
+<div class="sc-lbl">efetivo</div>
+</div>
+<div class="scope-card">
+<div class="sc-val" id="adsResultCm">—</div>
+<div class="sc-sub">cm / 360°</div>
+<div class="sc-lbl">mira ADS</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- MODAL -->
+<div class="modal-overlay" id="explainModal">
+<div class="modal-box">
+<button class="modal-close" id="btnCloseModal">✕</button>
+<h3>Como o cálculo funciona?</h3>
+<div class="modal-step"><div class="step-num">1</div>
+<div class="step-body"><p><strong id="mFromGame">—</strong> — yaw <strong id="mYawFrom">—</strong>. Sens <strong id="mSensFrom">—</strong>, DPI <strong id="mDpiFrom">—</strong>:</p></div></div>
+<div class="formula-box" id="mFormula1">—</div>
+<div class="modal-step"><div class="step-num">2</div>
+<div class="step-body"><p>Multiplicador <strong id="mMult">—</strong> divide o cm/360°:</p></div></div>
+<div class="formula-box" id="mFormulaAds">—</div>
+<div class="modal-step"><div class="step-num">3</div>
+<div class="step-body"><p>Converte para <strong id="mToGame">—</strong> (yaw <strong id="mYawTo">—</strong>, DPI <strong id="mDpiTo">—</strong>):</p></div></div>
+<div class="formula-box" id="mFormula2">—</div>
+<div class="result-preview-box">
+<span class="rp-label">✓ Sens ADS convertida</span>
+<span class="rp-value" id="mResult">—</span>
+</div>
+</div>
+</div>
+<!-- MEU ADS UNIVERSAL -->
+<section class="profile-wrap ads-universal-wrap" id="meu-ads">
+<div class="wrap">
+<div class="ads-universal-panel">
+<div class="ads-visual-box">
+<div class="ads-scope-icon">
+<svg fill="none" height="70" viewbox="0 0 100 100" width="70">
+<circle cx="50" cy="50" opacity="0.5" r="44" stroke="#3FE0FF" stroke-dasharray="4 3" stroke-width="1.5"></circle>
+<circle cx="50" cy="50" opacity="0.7" r="28" stroke="#3FE0FF" stroke-width="1.5"></circle>
+<line stroke="#D4FF3F" stroke-linecap="round" stroke-width="2" x1="50" x2="50" y1="6" y2="22"></line>
+<line stroke="#D4FF3F" stroke-linecap="round" stroke-width="2" x1="50" x2="50" y1="78" y2="94"></line>
+<line stroke="#D4FF3F" stroke-linecap="round" stroke-width="2" x1="6" x2="22" y1="50" y2="50"></line>
+<line stroke="#D4FF3F" stroke-linecap="round" stroke-width="2" x1="78" x2="94" y1="50" y2="50"></line>
+<circle cx="50" cy="50" fill="#D4FF3F" r="3"></circle>
+</svg>
+</div>
+<div class="ads-mult-display" id="adsUnivMultDisplay">×1.00</div>
+<span class="game-badge" id="adsUnivGameBadge">Sem ADS salvo</span>
+</div>
+<div class="profile-form">
+<div>
+<h3>Meu ADS Universal</h3>
+<p class="subtitle">Salve seu multiplicador — preenche automaticamente o conversor acima.</p>
+</div>
+<div class="pf-row">
+<div class="pf-field"><label>Jogo favorito</label><select id="adsUnivGame"></select></div>
+<div class="pf-field"><label>Sensibilidade</label><input id="adsUnivSens" step="0.01" type="number" value="0.40"/></div>
+<div class="pf-field"><label>DPI do mouse</label><input id="adsUnivDpi" step="50" type="number" value="800"/></div>
+</div>
+<div class="ads-mult-row">
+<div class="pf-field" style="flex:1;">
+<label>Multiplicador ADS</label>
+<input id="adsUnivMult" max="2.00" min="0.01" step="0.01" type="number" value="1.00"/>
+</div>
+<div style="flex:2;">
+<p class="ch-label" style="margin-bottom:6px;">Presets rápidos</p>
+<div class="ads-univ-presets">
+<button class="ads-univ-preset active" data-mult="1.00">1.00× (Igual)</button>
+<button class="ads-univ-preset" data-mult="0.85">0.85×</button>
+<button class="ads-univ-preset" data-mult="0.80">0.80×</button>
+<button class="ads-univ-preset" data-mult="0.75">0.75×</button>
+<button class="ads-univ-preset" data-mult="0.50">0.50×</button>
+</div>
+</div>
+</div>
+<div>
+<p class="ch-label">Tipo de escopo</p>
+<div class="ch-tabs" id="scopeTabs">
+<button class="ch-tab active" data-scope="iron">Iron Sight</button>
+<button class="ch-tab" data-scope="x2">2×</button>
+<button class="ch-tab" data-scope="x4">4×</button>
+<button class="ch-tab" data-scope="x8">8×</button>
+<button class="ch-tab" data-scope="sniper">Sniper</button>
+</div>
+</div>
+<!-- Crosshair code -->
+<div class="ch-code-row">
+<div class="ch-code-field">
+<label class="ch-code-label">
+<svg fill="none" height="12" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="12"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              Código da mira
+              <span class="ch-code-hint">Valorant / CS2 / Apex</span>
+</label>
+<div class="ch-code-input-wrap">
+<input autocomplete="off" id="adsChCode" placeholder="Cole o código aqui — ex: 0;P;c;1;h;0;m;1;0l;4;0o;2" spellcheck="false" type="text"/>
+<button class="ch-code-copy" id="btnCopyAdsCode" title="Copiar código">
+<svg fill="none" height="13" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="13"><rect height="13" rx="2" width="13" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="profile-actions">
+<button class="btn-save btn-save-ads" id="btnSaveAds">💾 Salvar ADS</button>
+<button class="btn-clear" id="btnClearAds">Limpar</button>
+<span class="profile-saved-badge" id="adsSavedBadge">✓ ADS Salvo</span>
+</div>
+</div>
+</div>
+</section>
+<!-- GUIA -->
+<section class="section" style="padding-top:50px;">
+<div class="wrap">
+<div class="section-head"><span class="section-tag">Guia rápido</span><h2>Qual multiplicador usar?</h2></div>
+<div class="info-grid">
+<div class="info-card"><span class="tag">1.0× — Igual ao hipfire</span><h4>Consistência total</h4><p>Mesma velocidade nos dois modos. Ideal para CS2 e Valorant onde a mira ADS é rara.</p></div>
+<div class="info-card"><span class="tag">0.85× — Mais lento no ADS</span><h4>Mais controle para zooms</h4><p>15% mais lento ao entrar em ADS. Útil para PUBG e EFT onde precisão importa mais.</p></div>
+<div class="info-card"><span class="tag">0.80× — Padrão competitivo</span><h4>O mais usado pelos pros</h4><p>Ajustes finos no ADS sem desacelerar demais. Popular em Warzone e Apex.</p></div>
+<div class="info-card"><span class="tag">0.75× e abaixo</span><h4>Snipers e rifles de precisão</h4><p>Câmera muito mais lenta. Microajustes precisos para rifles de longa distância.</p></div>
+</div>
+</div>
+</section>
+<footer>
+<div class="wrap">
+<div class="footer-grid">
+<a class="logo" href="/pt/"><div class="logo-mark">SF</div>SENSFLOW</a>
+<div class="footer-links">
+<div class="footer-col"><h4>Ferramentas</h4>
+<a href="/pt/sensitivity-converter">Conversor Hipfire</a>
+<a href="/pt/ads-converter">Conversão ADS</a>
+<a href="/pt/sensitivity-converter#edpi">Calculadora eDPI</a>
+</div>
+<div class="footer-col"><h4>Site</h4>
+<a href="/pt/">Início</a>
+<a href="/pt/about">Sobre nós</a>
+<a href="/pt/privacy">Política de Privacidade</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 SENSFLOW. Todos os direitos reservados.</span>
+<span>Feito para quem joga com precisão.</span>
+</div>
+</div>
+</footer>
+<script>
+/* ══════════════════════════════════════
+   DADOS DOS JOGOS — inline, sem deps
+   ══════════════════════════════════════ */
+const GAME_CATEGORIES = {
+  "Táticos / Competitivos":{"Valorant":0.07,"CS2":0.022,"CS:GO":0.022,"Counter-Strike: Source":0.022,"Rainbow Six Siege":0.005729486,"Apex Legends":0.022,"Titanfall 2":0.022,"Deadlock":0.044,"FragPunk":0.0066,"Spectre Divide":0.0066,"XDefiant":0.0066},
+  "Battle Royale":{"Fortnite":0.005555,"PUBG: Battlegrounds":0.002222,"Apex Legends (BR)":0.022,"Call of Duty: Warzone":0.0066,"Splitgate 2":0.022},
+  "Call of Duty":{"CoD: Black Ops 6":0.0066,"CoD: Modern Warfare 3":0.0066,"CoD: Warzone":0.0066},
+  "Hero Shooters":{"Overwatch 2":0.0066,"Marvel Rivals":0.0066,"The Finals":0.0066},
+  "Extração / Sobrevivência":{"Escape from Tarkov":0.022,"Gray Zone Warfare":0.0066,"Arena Breakout: Infinite":0.0066,"Hunt: Showdown":0.0066,"Rust":0.022},
+  "Militares / Guerra":{"Battlefield 2042":0.0066,"Battlefield 6":0.0066,"Delta Force":0.0066,"Helldivers 2":0.0066},
+  "Sci-fi / Outros FPS":{"Destiny 2":0.0066,"Halo Infinite":0.022},
+  "Clássicos":{"Team Fortress 2":0.022,"Half-Life 2":0.022,"Left 4 Dead 2":0.022,"Portal 2":0.022},
+  "Outros":{"Minecraft":0.1,"osu!":0.022}
+};
+const GAMES = Object.assign({}, ...Object.values(GAME_CATEGORIES));
+
+function fillSelect(sel, def) {
+  sel.innerHTML = "";
+  Object.entries(GAME_CATEGORIES).forEach(([cat, list]) => {
+    const og = document.createElement("optgroup");
+    og.label = cat;
+    Object.keys(list).forEach(g => {
+      const o = document.createElement("option");
+      o.value = g; o.textContent = g;
+      og.appendChild(o);
+    });
+    sel.appendChild(og);
+  });
+  if (sel.querySelector(`option[value="${def}"]`)) sel.value = def;
+}
+
+/* ── Populate all selects on load ── */
+fillSelect(document.getElementById("fromGame"),   "Valorant");
+fillSelect(document.getElementById("toGame"),     "CS2");
+fillSelect(document.getElementById("adsUnivGame"),"Valorant");
+
+/* ══════════════════════════════════════
+   MATH
+   ══════════════════════════════════════ */
+const getCm  = (y,s,d) => (360/(y*s*d))*2.54;
+const getSens= (cm,y,d) => (360*2.54)/(cm*y*d);
+
+let lastCm = 0, lastSt = 0;
+
+function compute() {
+  const fg = document.getElementById("fromGame").value;
+  const tg = document.getElementById("toGame").value;
+  const s  = parseFloat(document.getElementById("fromSens").value)||0;
+  const df = parseFloat(document.getElementById("fromDpi").value) ||1;
+  const dt = parseFloat(document.getElementById("toDpi").value)   ||1;
+  const yf = GAMES[fg]||0.022, yt = GAMES[tg]||0.022;
+
+  const cm = getCm(yf,s,df);
+  const st = getSens(cm,yt,dt);
+  lastCm=cm; lastSt=st;
+
+  document.getElementById("resultSens").textContent = st.toFixed(3);
+  document.getElementById("resultEdpi").textContent = Math.round(st*dt);
+  document.getElementById("resultCm").textContent   = cm.toFixed(2)+" cm/360°";
+  document.getElementById("resultIn").textContent   = (cm/2.54).toFixed(2)+" in/360°";
+  computeAds();
+}
+
+function computeAds() {
+  const m  = parseFloat(document.getElementById("adsMult").value)||1;
+  const dt = parseFloat(document.getElementById("toDpi").value)  ||800;
+  const yt = GAMES[document.getElementById("toGame").value]      ||0.022;
+  const ca = lastCm/m;
+  const sa = getSens(ca,yt,dt);
+  const ea = Math.round(sa*dt);
+  document.getElementById("adsResultSens").textContent = isFinite(sa)?sa.toFixed(3):"—";
+  document.getElementById("adsResultEdpi").textContent = isFinite(ea)?ea:"—";
+  document.getElementById("adsResultCm").textContent   = isFinite(ca)?ca.toFixed(2)+" cm":"—";
+  document.getElementById("adsMultLabel").textContent  = "×"+m.toFixed(2);
+}
+
+/* ── Event listeners — converter ── */
+["fromGame","toGame"].forEach(id=>document.getElementById(id).addEventListener("change",compute));
+["fromSens","fromDpi","toDpi"].forEach(id=>document.getElementById(id).addEventListener("input",compute));
+document.getElementById("adsMult").addEventListener("input",()=>{
+  document.querySelectorAll(".mult-preset").forEach(b=>b.classList.remove("active")); computeAds();
+});
+
+document.querySelectorAll(".mult-preset").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".mult-preset").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("adsMult").value=btn.dataset.mult;
+    computeAds();
+  });
+});
+
+document.getElementById("btnReset").addEventListener("click",()=>{
+  const raw=localStorage.getItem("sensflow_ads_profile");
+  if(raw){const p=JSON.parse(raw);applyToConverter(p);return;}
+  fillSelect(document.getElementById("fromGame"),"Valorant");
+  fillSelect(document.getElementById("toGame"),"CS2");
+  document.getElementById("fromSens").value="0.40";
+  document.getElementById("fromDpi").value="800";
+  document.getElementById("toDpi").value="800";
+  document.getElementById("adsMult").value="1.00";
+  document.querySelectorAll(".mult-preset").forEach((b,i)=>b.classList.toggle("active",i===0));
+  compute();
+});
+
+/* ══════════════════════════════════════
+   MODAL
+   ══════════════════════════════════════ */
+function openModal(){
+  const fg=document.getElementById("fromGame").value;
+  const tg=document.getElementById("toGame").value;
+  const s =parseFloat(document.getElementById("fromSens").value)||0;
+  const df=parseFloat(document.getElementById("fromDpi").value) ||800;
+  const dt=parseFloat(document.getElementById("toDpi").value)   ||800;
+  const m =parseFloat(document.getElementById("adsMult").value) ||1;
+  const yf=GAMES[fg]||0.022, yt=GAMES[tg]||0.022;
+  const cm=lastCm||getCm(yf,s,df);
+  const ca=cm/m;
+  const sa=getSens(ca,yt,dt);
+  const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v;};
+  set("mFromGame",fg); set("mToGame",tg); set("mSensFrom",s);
+  set("mDpiFrom",df);  set("mYawFrom",yf); set("mYawTo",yt);
+  set("mDpiTo",dt);    set("mMult",m);     set("mResult",sa.toFixed(3));
+  set("mFormula1",`cm/360 = (360 ÷ (${yf} × ${s} × ${df})) × 2.54\n       = ${cm.toFixed(2)} cm`);
+  set("mFormulaAds",`cm_ads = ${cm.toFixed(2)} ÷ ${m} = ${ca.toFixed(2)} cm`);
+  set("mFormula2",`sens_ads = (${ca.toFixed(2)} ÷ 2.54) × ${dt} × ${yt} ÷ 360\n         = ${sa.toFixed(3)}`);
+  document.getElementById("explainModal").classList.add("open");
+}
+function closeModal(){ document.getElementById("explainModal").classList.remove("open"); }
+document.getElementById("btnExplain").addEventListener("click",openModal);
+document.getElementById("btnExplain2").addEventListener("click",openModal);
+document.getElementById("btnCloseModal").addEventListener("click",closeModal);
+
+/* Copy ADS crosshair code */
+document.getElementById("btnCopyAdsCode").addEventListener("click",()=>{
+  const code = document.getElementById("adsChCode").value;
+  if(!code) return;
+  navigator.clipboard.writeText(code).then(()=>{
+    const btn = document.getElementById("btnCopyAdsCode");
+    btn.classList.add("copied"); btn.title="Copiado!";
+    setTimeout(()=>{ btn.classList.remove("copied"); btn.title="Copiar código"; },2000);
+  });
+});
+document.getElementById("explainModal").addEventListener("click",e=>{if(e.target===document.getElementById("explainModal"))closeModal();});
+
+/* ══════════════════════════════════════
+   MEU ADS UNIVERSAL
+   ══════════════════════════════════════ */
+const ADS_KEY="sensflow_ads_profile";
+let scopeType="iron";
+
+/* Scope tabs */
+document.querySelectorAll("#scopeTabs .ch-tab").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll("#scopeTabs .ch-tab").forEach(t=>t.classList.remove("active"));
+    btn.classList.add("active");
+    scopeType=btn.dataset.scope;
+  });
+});
+
+/* ADS Universal presets */
+document.querySelectorAll(".ads-univ-preset").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".ads-univ-preset").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("adsUnivMult").value=btn.dataset.mult;
+    document.getElementById("adsUnivMultDisplay").textContent="×"+parseFloat(btn.dataset.mult).toFixed(2);
+  });
+});
+document.getElementById("adsUnivMult").addEventListener("input",e=>{
+  document.querySelectorAll(".ads-univ-preset").forEach(b=>b.classList.remove("active"));
+  document.getElementById("adsUnivMultDisplay").textContent="×"+parseFloat(e.target.value||1).toFixed(2);
+});
+document.getElementById("adsUnivGame").addEventListener("change",e=>{
+  document.getElementById("adsUnivGameBadge").textContent=e.target.value||"Sem ADS salvo";
+});
+
+function applyToConverter(p){
+  const fg=document.getElementById("fromGame");
+  if(p.game&&fg.querySelector(`option[value="${p.game}"]`)) fg.value=p.game;
+  if(p.sens) document.getElementById("fromSens").value=p.sens;
+  if(p.dpi){ document.getElementById("fromDpi").value=p.dpi; document.getElementById("toDpi").value=p.dpi; }
+  if(p.mult){
+    document.getElementById("adsMult").value=p.mult;
+    document.querySelectorAll(".mult-preset").forEach(b=>b.classList.toggle("active",b.dataset.mult===p.mult));
+  }
+  compute();
+}
+
+document.getElementById("btnSaveAds").addEventListener("click",()=>{
+  const p={
+    game: document.getElementById("adsUnivGame").value,
+    sens: document.getElementById("adsUnivSens").value,
+    dpi:  document.getElementById("adsUnivDpi").value,
+    mult: document.getElementById("adsUnivMult").value,
+    scope:scopeType
+  };
+  localStorage.setItem(ADS_KEY,JSON.stringify(p));
+  document.getElementById("adsUnivMultDisplay").textContent="×"+parseFloat(p.mult).toFixed(2);
+  document.getElementById("adsUnivGameBadge").textContent=p.game;
+  applyToConverter(p);
+  const b=document.getElementById("adsSavedBadge");
+  b.classList.add("show"); setTimeout(()=>b.classList.remove("show"),3000);
+});
+
+document.getElementById("btnClearAds").addEventListener("click",()=>{
+  localStorage.removeItem(ADS_KEY);
+  fillSelect(document.getElementById("adsUnivGame"),"Valorant");
+  document.getElementById("adsUnivSens").value="0.40";
+  document.getElementById("adsUnivDpi").value="800";
+  document.getElementById("adsUnivMult").value="1.00";
+  document.getElementById("adsChCode").value="";
+  scopeType="iron";
+  document.querySelectorAll("#scopeTabs .ch-tab").forEach((t,i)=>t.classList.toggle("active",i===0));
+  document.querySelectorAll(".ads-univ-preset").forEach((b,i)=>b.classList.toggle("active",i===0));
+  document.getElementById("adsUnivMultDisplay").textContent="×1.00";
+  document.getElementById("adsUnivGameBadge").textContent="Sem ADS salvo";
+});
+
+/* ── Load salvo ── */
+(function init(){
+  /* hipfire profile */
+  const hp=localStorage.getItem("sensflow_profile");
+  if(hp){const p=JSON.parse(hp);
+    const fg=document.getElementById("fromGame");
+    if(p.game&&fg.querySelector(`option[value="${p.game}"]`)) fg.value=p.game;
+    if(p.sens) document.getElementById("fromSens").value=p.sens;
+    if(p.dpi)  document.getElementById("fromDpi").value=p.dpi;
+  }
+  /* ADS profile */
+  const ap=localStorage.getItem(ADS_KEY);
+  if(ap){const p=JSON.parse(ap);
+    const sg=document.getElementById("adsUnivGame");
+    if(p.game&&sg.querySelector(`option[value="${p.game}"]`)) sg.value=p.game;
+    if(p.sens) document.getElementById("adsUnivSens").value=p.sens;
+    if(p.dpi)  document.getElementById("adsUnivDpi").value=p.dpi;
+    if(p.mult){
+      document.getElementById("adsUnivMult").value=p.mult;
+      document.querySelectorAll(".ads-univ-preset").forEach(b=>b.classList.toggle("active",b.dataset.mult===p.mult));
+      document.getElementById("adsUnivMultDisplay").textContent="×"+parseFloat(p.mult).toFixed(2);
+    }
+    if(p.chCode) document.getElementById("adsChCode").value=p.chCode;
+    if(p.scope){
+      scopeType=p.scope;
+      document.querySelectorAll("#scopeTabs .ch-tab").forEach(t=>t.classList.toggle("active",t.dataset.scope===p.scope));
+    }
+    if(p.game) document.getElementById("adsUnivGameBadge").textContent=p.game;
+    applyToConverter(p);
+  }
+  compute();
+})();
+</script>
+<script src="/js/lang-detect.js?v=4"></script>
+<script src="/js/lang-switch.js?v=4"></script>
+</body>
+</html>

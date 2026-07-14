@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- ══ SEO META TAGS ══ -->
+<meta content="Convierte tu sensibilidad de ratón entre Valorant, CS2, Apex Legends, Fortnite y 35+ juegos FPS. Gratis, sin registro. Calculadora de eDPI y cm/360° incluida." name="description"/>
+<meta content="conversor sensibilidad raton, sensitivity converter valorant cs2, convertir sens fps, calculadora edpi, cm 360 grados, apex sensibilidad, fortnite sens" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="SENSFLOW" name="author"/>
+<meta content="pt-BR" name="language"/>
+<link href="https://sensflow.tech/es/sensitivity-converter" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="SENSFLOW" property="og:site_name"/>
+<meta content="es_ES" property="og:locale"/>
+<meta content="Conversor de Sensibilidad de Ratón — 35+ Juegos | SENSFLOW" property="og:title"/>
+<meta content="Convierte tu sensibilidad entre Valorant, CS2, Apex, Fortnite y 35+ juegos. eDPI y cm/360° calculados automáticamente." property="og:description"/>
+<meta content="https://sensflow.tech/es/sensitivity-converter" property="og:url"/>
+<meta content="https://sensflow.tech/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@sensflow" name="twitter:site"/>
+<meta content="Conversor de Sensibilidad de Ratón — 35+ Juegos | SENSFLOW" name="twitter:title"/>
+<meta content="Convierte tu sensibilidad entre Valorant, CS2, Apex, Fortnite y 35+ juegos. eDPI y cm/360° calculados automáticamente." name="twitter:description"/>
+<meta content="https://sensflow.tech/og-image.png" name="twitter:image"/>
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SENSFLOW — Conversor de Sensibilidade",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+  "description": "Conversor de sensibilidade de mouse gratuito. Converta entre Valorant, CS2, Apex Legends, Fortnite e 35+ jogos usando matemática real (yaw + cm/360°).",
+  "url": "https://sensflow.tech/sensitivity-converter"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Como funciona o conversor de sensibilidade?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O conversor usa o método cm/360°: calcula a distância física que o mouse precisa percorrer para um giro completo de 360° em cada jogo. Como a distância física é preservada, sua memória muscular se mantém consistente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso mudar meu DPI para converter a sensibilidade?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. Mantenha o DPI que você usa normalmente e deixe os dois campos com o mesmo valor. Só altere se você usa DPIs diferentes nos dois jogos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é eDPI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "eDPI (effective DPI) é seu DPI multiplicado pela sensibilidade no jogo. É uma métrica universal que permite comparar configurações entre jogadores independente do jogo ou mouse usado."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O que é cm/360°?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "cm/360° é a distância física em centímetros que você precisa mover o mouse para girar 360° no jogo. É a medida universal de sensibilidade usada por jogadores profissionais."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quais jogos o conversor suporta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O SENSFLOW suporta 35+ jogos incluindo Valorant, CS2, CS:GO, Apex Legends, Fortnite, PUBG, Overwatch 2, Rainbow Six Siege, Call of Duty Warzone, Escape from Tarkov, Deadlock, Marvel Rivals, The Finals e muito mais."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://sensflow.tech/" },
+    { "@type": "ListItem", "position": 2, "name": "Conversor de Sensibilidade", "item": "https://sensflow.tech/sensitivity-converter" }
+  ]
+}
+</script>
+<title>Conversor de Sensibilidad de Ratón — Valorant, CS2, Apex, Fortnite | SENSFLOW</title>
+<!-- Favicon -->
+<link href="/favicon.svg?v=4" rel="icon" type="image/svg+xml"/>
+<link href="/favicon-96x96.png?v=4" rel="icon" sizes="96x96" type="image/png"/>
+<link href="/favicon-48x48.png?v=4" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/favicon-32x32.png?v=4" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png?v=4" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/favicon.ico?v=4" rel="shortcut icon"/>
+<link href="/apple-touch-icon.png?v=4" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link href="https://sensflow.tech/pt/sensitivity-converter" hreflang="pt-BR" rel="alternate"/><link href="https://sensflow.tech/en/sensitivity-converter" hreflang="en" rel="alternate"/><link href="https://sensflow.tech/es/sensitivity-converter" hreflang="es" rel="alternate"/><link href="https://sensflow.tech/pt/sensitivity-converter" hreflang="x-default" rel="alternate"/>
+<!-- hreflang — SEO Internacional -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="/css/style.css?v=4" rel="stylesheet"/>
+</head>
+<body>
+<!-- NAV -->
+<nav>
+<div class="nav-inner">
+<a class="logo" href="/es/"><div class="logo-mark">SF</div>SENSFLOW</a>
+<div class="nav-links"><a href="/es/">Inicio</a><a class="active" href="/es/sensitivity-converter">Conversor</a><a href="/es/ads-converter">ADS / Scope</a><a href="/es/about">Acerca de</a><a href="/es/contact">Contacto</a><a href="/es/privacy">Privacidad</a></div>
+<div class="lang-switch"><button class="lang-opt" data-lang="pt"><span class="flag">🇧🇷</span><span class="code">PT</span></button><button class="lang-opt" data-lang="en"><span class="flag">🇺🇸</span><span class="code">EN</span></button><button class="lang-opt active" data-lang="es"><span class="flag">🇪🇸</span><span class="code">ES</span></button></div>
+<a class="nav-cta" href="/es/ads-converter">Conversor ADS →</a>
+</div>
+</nav>
+<!-- HERO + CONVERTER -->
+<header class="hero-converter">
+<div class="wrap hero-grid">
+<div>
+<span class="eyebrow"><span class="dot"></span> Precisión competitiva</span>
+<h1>Juega con la <span>misma mira</span> en cualquier juego.</h1>
+<p class="lead">Convierte tu sensibilidad entre juegos y mantén tu mira consistente con matemáticas reales.</p>
+<div class="hero-actions">
+<a class="btn-primary" href="#converter">Convertir ahora</a>
+<a class="btn-ghost" href="/es/ads-converter">Convertir ADS →</a>
+</div>
+<div class="hero-stats">
+<div><p>35+</p><p>juegos compatibles</p></div>
+<div><p>cm/360°</p><p>unidad de precisión</p></div>
+<div><p>100%</p><p>gratis</p></div>
+</div>
+</div>
+<!-- CONVERTER CONSOLE -->
+<div class="console" id="converter">
+<div class="autofill-banner" id="autofillBanner">
+<span class="af-dot"></span>
+<span id="autofillText">Perfil cargado automáticamente</span>
+</div>
+<div class="console-head">
+<h3>Conversor de Sensibilidad</h3>
+<div style="display:flex;align-items:center;gap:10px;">
+<!-- botão i: chama função global definida no final desta página -->
+<button class="info-btn" id="btnExplain" title="¿Cómo funciona el cálculo?">i</button>
+<div class="led"><span></span><span></span><span></span></div>
+</div>
+</div>
+<div class="field-row">
+<div class="field"><label>Convertir desde</label><select id="fromGame"></select></div>
+<div class="field"><label>Convertir a</label><select id="toGame"></select></div>
+</div>
+<div class="field-row">
+<div class="field"><label>Sensibilidad de origen</label><input id="fromSens" min="0" step="0.01" type="number" value="0.40"/></div>
+<div class="field"><label>DPI de origen</label><input id="fromDpi" min="100" step="50" type="number" value="800"/></div>
+</div>
+<div class="field-row">
+<div class="field"><label>DPI de destino</label><input id="toDpi" min="100" step="50" type="number" value="800"/></div>
+<div class="field" style="display:flex;align-items:flex-end;">
+<button class="btn-ghost" id="btnReset" style="width:100%;padding:11px 12px;font-size:.88rem;">↺ Restablecer</button>
+</div>
+</div>
+<!-- Link para página ADS -->
+<div class="section-divider"><span>¿Necesitas convertir ADS?</span></div>
+<a href="/es/ads-converter" style="display:flex;align-items:center;justify-content:space-between;background:rgba(212,255,63,.04);border:1px solid rgba(212,255,63,.2);border-radius:10px;padding:12px 16px;font-size:.85rem;transition:background .2s;">
+<span style="color:var(--muted);">Multiplicador de mira (ADS / Scope)</span>
+<span style="color:var(--accent);font-weight:600;font-family:'JetBrains Mono',monospace;">Abrir →</span>
+</a>
+<div class="result-zone">
+<div class="result-main">
+<p class="label">Sensibilidad convertida</p>
+<p class="value" id="resultSens">—</p>
+<div class="sub-results">
+<div><p id="resultEdpi">—</p><p>eDPI</p></div>
+<div><p id="resultCm">— cm</p><p>cm / 360°</p></div>
+<div><p id="resultIn">— in</p><p>in / 360°</p></div>
+</div>
+</div>
+<div class="dial-wrap">
+<svg class="dial" viewbox="0 0 120 120">
+<circle cx="60" cy="60" fill="none" r="50" stroke="#262B33" stroke-width="8"></circle>
+<circle cx="60" cy="60" fill="none" id="dialArc" r="50" stroke="url(#grad)" stroke-dasharray="314" stroke-dashoffset="250" stroke-linecap="round" stroke-width="8" transform="rotate(-90 60 60)"></circle>
+<defs>
+<lineargradient id="grad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#D4FF3F"></stop>
+<stop offset="100%" stop-color="#3FE0FF"></stop>
+</lineargradient>
+</defs>
+<text fill="#ECEEF1" font-family="JetBrains Mono" font-size="15" font-weight="600" id="dialLabel" text-anchor="middle" x="60" y="66">--</text>
+</svg>
+<p class="dial-caption">distancia física<br/>para girar 360°</p>
+</div>
+</div>
+</div><!-- /console -->
+</div>
+</header>
+<!-- EXPLAIN MODAL -->
+<div class="modal-overlay" id="explainModal">
+<div class="modal-box">
+<button class="modal-close" id="btnCloseModal">✕</button>
+<h3>¿Cómo funciona el cálculo?</h3>
+<div class="modal-step">
+<div class="step-num">1</div>
+<div class="step-body">
+<p>Cada juego tiene un <strong>valor de yaw</strong> interno: grados que la cámara gira por cada conteo del ratón. <strong id="mFromGame">—</strong> usa <strong id="mYawFrom">—</strong> grados/conteo.</p>
+</div>
+</div>
+<div class="modal-step">
+<div class="step-num">2</div>
+<div class="step-body">
+<p>Con sens <strong id="mSensFrom">—</strong> y DPI <strong id="mDpiFrom">—</strong>, calculamos cuántos cm debes mover para girar 360°:</p>
+</div>
+</div>
+<div class="formula-box" id="mFormula1">—</div>
+<div class="modal-step">
+<div class="step-num">3</div>
+<div class="step-body">
+<p>Queremos ese mismo <strong id="mCm360">—</strong> cm en <strong id="mToGame">—</strong> (yaw <strong id="mYawTo">—</strong>, DPI <strong id="mDpiTo">—</strong>). Resolvemos para la nueva sens:</p>
+</div>
+</div>
+<div class="formula-box" id="mFormula2">—</div>
+<div class="result-preview-box">
+<span class="rp-label">✓ Sensibilidad convertida</span>
+<span class="rp-value" id="mResult">—</span>
+</div>
+<p style="font-size:.76rem;color:var(--muted);margin-top:16px;">La conversión preserva la <strong style="color:var(--text)">distancia física real</strong> que mueves el ratón en ambos juegos.</p>
+</div>
+</div>
+<!-- ══ MINHA SENSIBILIDADE UNIVERSAL ══ -->
+<section class="profile-wrap" id="meu-perfil">
+<div class="wrap">
+<div class="profile-panel">
+<!-- Crosshair preview canvas -->
+<div class="ch-preview">
+<canvas height="140" id="chCanvas" width="140"></canvas>
+<span class="game-badge" id="chGameBadge">Sin perfil guardado</span>
+</div>
+<!-- Form -->
+<div class="profile-form">
+<div>
+<h3>Mi Sensibilidad Universal</h3>
+<p class="subtitle">Guarda tu juego favorito — el conversor se rellenará automáticamente.</p>
+</div>
+<!-- Jogo + Sens + DPI -->
+<div class="pf-row">
+<div class="pf-field"><label>Juego favorito</label><select id="pfGame"></select></div>
+<div class="pf-field"><label>Sensibilidad</label><input id="pfSens" step="0.01" type="number" value="0.40"/></div>
+<div class="pf-field"><label>DPI del ratón</label><input id="pfDpi" step="50" type="number" value="800"/></div>
+</div>
+<!-- Crosshair style -->
+<div>
+<p class="ch-label">Estilo de mira</p>
+<div class="ch-tabs">
+<button class="ch-tab active" data-style="cross" onclick="setChStyle(this)">Cruz</button>
+<button class="ch-tab" data-style="dot" onclick="setChStyle(this)">Punto</button>
+<button class="ch-tab" data-style="circle" onclick="setChStyle(this)">Círculo</button>
+<button class="ch-tab" data-style="tcross" onclick="setChStyle(this)">T-Cruz</button>
+<button class="ch-tab" data-style="sniper" onclick="setChStyle(this)">Sniper</button>
+</div>
+</div>
+<!-- Crosshair code -->
+<div class="ch-code-row">
+<div class="ch-code-field">
+<label class="ch-code-label">
+<svg fill="none" height="12" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="12"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              Código de mira
+              <span class="ch-code-hint">Valorant / CS2 / Apex</span>
+</label>
+<div class="ch-code-input-wrap">
+<input autocomplete="off" id="pfChCode" placeholder="Pega tu código aquí — ej: 0;P;c;1;h;0;m;1;0l;4;0o;2" spellcheck="false" type="text"/>
+<button class="ch-code-copy" id="btnCopyCode" title="Copiar código">
+<svg fill="none" height="13" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="13"><rect height="13" rx="2" width="13" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="profile-actions">
+<button class="btn-save" onclick="saveProfile()">💾 Guardar perfil</button>
+<button class="btn-clear" onclick="clearProfile()">Limpiar</button>
+<span class="profile-saved-badge" id="savedBadge">✓ Guardado</span>
+</div>
+</div>
+</div>
+</section>
+<!-- GAME STRIP -->
+<section class="game-strip">
+<div class="wrap">
+<span class="game-strip-label">Juegos compatibles</span>
+<div class="game-list" id="gameStrip"></div>
+</div>
+</section>
+<!-- TOOLS -->
+<section class="section" id="tools">
+<div class="wrap">
+<div class="section-head">
+<span class="section-tag">Caja de herramientas</span>
+<h2>Todo para calibrar tu mira</h2>
+<p>Herramientas creadas para quienes toman la consistencia en serio.</p>
+</div>
+<div class="tools-grid">
+<div class="tool-card">
+<div class="icon-box"><svg fill="none" height="20" stroke="#D4FF3F" stroke-width="2" viewbox="0 0 24 24" width="20"><path d="M16 3 4 14l5 1 1 5 11-11-5-1z"></path></svg></div>
+<span class="num">01</span>
+<h3>Conversor Hipfire</h3>
+<p>Convierte tu sensibilidad entre juegos manteniendo la misma distancia física de mira.</p>
+<a class="go" href="#converter">Usar conversor →</a>
+</div>
+<div class="tool-card">
+<div class="icon-box"><svg fill="none" height="20" stroke="#D4FF3F" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="12" cy="8" r="4"></circle><path d="M12 12v8M8 16h8"></path></svg></div>
+<span class="num">02</span>
+<h3>Conversión ADS</h3>
+<p>Convierte tu sens de mira (ADS/Scope) con multiplicador personalizado.</p>
+<a class="go" href="/es/ads-converter">Abrir página ADS →</a>
+</div>
+<div class="tool-card">
+<div class="icon-box"><svg fill="none" height="20" stroke="#D4FF3F" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></div>
+<span class="num">03</span>
+<h3>Calculadora de eDPI</h3>
+<p>Calcula tu sensibilidad efectiva multiplicando la sensibilidad por el DPI.</p>
+<a class="go" href="#edpi">Calcular eDPI →</a>
+</div>
+</div>
+</div>
+</section>
+<!-- EDPI -->
+<section class="edpi-section" id="edpi">
+<div class="wrap">
+<div class="console" style="max-width:640px;">
+<div class="console-head">
+<h3>Calculadora de eDPI</h3>
+<div class="led"><span></span><span></span><span></span></div>
+</div>
+<div class="field-row">
+<div class="field"><label>Sensibilidad</label><input id="edpiSens" step="0.01" type="number" value="0.40"/></div>
+<div class="field"><label>DPI del ratón</label><input id="edpiDpi" step="50" type="number" value="800"/></div>
+</div>
+<div class="result-zone" style="grid-template-columns:1fr;">
+<div class="result-main">
+<p class="label">eDPI efectivo</p>
+<p class="value" id="edpiResult">320</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT -->
+<section class="section" id="about">
+<div class="wrap about-grid">
+<div class="about-visual">
+<div class="crosshair">
+<div class="ring"></div>
+<span class="h"></span><span class="v"></span>
+</div>
+</div>
+<div class="about-text">
+<span class="section-tag">Acerca de SENSFLOW</span>
+<h2>Creado por quienes entienden la obsesión por la consistencia.</h2>
+<p>SENSFLOW nació de una idea simple: cambiar de juego no debería significar horas recalibrando tu mira. Nuestras herramientas usan matemáticas reales — yaw, DPI y distancia de rotación.</p>
+<ul class="about-list">
+<li>Conversiones basadas en distancia física real (cm/360°)</li>
+<li>Página dedicada a la conversión ADS con guía completa</li>
+<li>35+ juegos con yaw validado</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+<div class="wrap">
+<div class="footer-grid">
+<a class="logo" href="/es/"><div class="logo-mark">SF</div>SENSFLOW</a>
+<div class="footer-links">
+<div class="footer-col">
+<h4>Herramientas</h4>
+<a href="#converter">Conversor Hipfire</a>
+<a href="/es/ads-converter">Conversión ADS</a>
+<a href="#edpi">Calculadora eDPI</a>
+</div>
+<div class="footer-col">
+<h4>Sitio</h4>
+<a href="/es/">Inicio</a>
+<a href="/es/about">Sobre nosotros</a>
+<a href="/es/contact">Contacto</a>
+<a href="/es/privacy">Política de Privacidad</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 SENSFLOW. Todos los derechos reservados.</span>
+<span>Hecho para quienes juegan con precisión.</span>
+</div>
+</div>
+</footer>
+<!-- Scripts -->
+<script src="/js/games.js?v=4"></script>
+<script src="/js/profile.js?v=4"></script>
+<script src="/js/converter.js?v=4"></script>
+<script src="/js/lang-detect.js?v=4"></script>
+<script src="/js/lang-switch.js?v=4"></script>
+</body>
+</html>

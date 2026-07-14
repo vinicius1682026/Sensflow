@@ -1,0 +1,13 @@
+{
+  "name": "SENSFLOW — Conversor de Sensibilidade",
+  "short_name": "SENSFLOW",
+  "description": "Conversor de sensibilidade de mouse para jogos FPS",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0A0C0F",
+  "background_color": "#0A0C0F",
+  "display": "standalone",
+  "start_url": "/"
+}

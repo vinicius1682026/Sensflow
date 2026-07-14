@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ── PT ── -->
+  <url>
+    <loc>https://sensflow.tech/pt/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/pt/sensitivity-converter</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/sensitivity-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/sensitivity-converter"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/sensitivity-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/sensitivity-converter"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/pt/ads-converter</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/ads-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/ads-converter"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/ads-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/ads-converter"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/pt/about</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/about"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/pt/contact</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/contact"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/pt/privacy</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/privacy"/>
+  </url>
+
+  <!-- ── EN ── -->
+  <url>
+    <loc>https://sensflow.tech/en/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/en/sensitivity-converter</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/sensitivity-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/sensitivity-converter"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/sensitivity-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/sensitivity-converter"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/en/ads-converter</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/ads-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/ads-converter"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/ads-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/ads-converter"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/en/about</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/about"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/en/contact</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/contact"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/en/privacy</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/privacy"/>
+  </url>
+
+  <!-- ── ES ── -->
+  <url>
+    <loc>https://sensflow.tech/es/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/es/sensitivity-converter</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/sensitivity-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/sensitivity-converter"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/sensitivity-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/sensitivity-converter"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/es/ads-converter</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/ads-converter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/ads-converter"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/ads-converter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/ads-converter"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/es/about</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/about"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/about"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/es/contact</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/contact"/>
+  </url>
+  <url>
+    <loc>https://sensflow.tech/es/privacy</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://sensflow.tech/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sensflow.tech/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://sensflow.tech/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/privacy"/>
+  </url>
+
+</urlset>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- ══ SEO META TAGS ══ -->
+<meta content="Política de privacidade do SENSFLOW. Saiba como tratamos seus dados, o uso de localStorage, anúncios de terceiros e seus direitos." name="description"/>
+<meta content="politica privacidade sensflow, dados pessoais, lgpd gaming" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<meta content="SENSFLOW" name="author"/>
+<meta content="pt-BR" name="language"/>
+<link href="https://sensflow.tech/pt/privacy" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="SENSFLOW" property="og:site_name"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="Política de Privacidade | SENSFLOW" property="og:title"/>
+<meta content="Como o SENSFLOW trata seus dados: localStorage, anúncios de terceiros e seus direitos." property="og:description"/>
+<meta content="https://sensflow.tech/pt/privacy" property="og:url"/>
+<meta content="https://sensflow.tech/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@sensflow" name="twitter:site"/>
+<meta content="Política de Privacidade | SENSFLOW" name="twitter:title"/>
+<meta content="Como o SENSFLOW trata seus dados: localStorage, anúncios de terceiros e seus direitos." name="twitter:description"/>
+<meta content="https://sensflow.tech/og-image.png" name="twitter:image"/>
+<!-- Schema.org JSON-LD -->
+<title>Política de Privacidade | SENSFLOW</title>
+<!-- Favicon -->
+<link href="/favicon.svg?v=4" rel="icon" type="image/svg+xml"/>
+<link href="/favicon-96x96.png?v=4" rel="icon" sizes="96x96" type="image/png"/>
+<link href="/favicon-48x48.png?v=4" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/favicon-32x32.png?v=4" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png?v=4" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/favicon.ico?v=4" rel="shortcut icon"/>
+<link href="/apple-touch-icon.png?v=4" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<!-- hreflang — SEO Internacional -->
+<link href="https://sensflow.tech/pt/privacy" hreflang="pt-BR" rel="alternate"/>
+<link href="https://sensflow.tech/en/privacy" hreflang="en" rel="alternate"/>
+<link href="https://sensflow.tech/es/privacy" hreflang="es" rel="alternate"/>
+<link href="https://sensflow.tech/pt/privacy" hreflang="x-default" rel="alternate"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="/css/style.css?v=4" rel="stylesheet"/>
+<style>
+    .priv-hero{padding:80px 0 50px;}
+    .priv-hero h1{font-size:2.8rem;margin-bottom:12px;}
+    .priv-hero h1 span{color:var(--accent);}
+    .priv-hero .update{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--muted);margin-top:8px;}
+    .priv-body{padding:0 0 100px;}
+    .priv-grid{display:grid;grid-template-columns:220px 1fr;gap:56px;align-items:start;}
+    .priv-sidebar{position:sticky;top:90px;}
+    .priv-sidebar nav{display:grid;gap:4px;}
+    .priv-sidebar nav a{font-size:.85rem;color:var(--muted);padding:8px 12px;border-radius:8px;transition:all .2s;border-left:2px solid transparent;}
+    .priv-sidebar nav a:hover{color:var(--text);background:var(--panel);}
+    .priv-sidebar nav a.active{color:var(--accent);border-left-color:var(--accent);}
+    .priv-sidebar h4{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:10px;padding:0 12px;}
+    .priv-section{margin-bottom:48px;scroll-margin-top:90px;}
+    .priv-section h2{font-size:1.5rem;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border);}
+    .priv-section p{color:var(--muted);font-size:.95rem;line-height:1.8;margin-bottom:14px;}
+    .priv-section p strong{color:var(--text);}
+    .priv-section ul{list-style:none;display:grid;gap:10px;margin-bottom:14px;}
+    .priv-section ul li{display:flex;gap:10px;align-items:flex-start;font-size:.92rem;color:var(--muted);}
+    .priv-section ul li::before{content:"›";color:var(--accent);font-weight:700;font-size:1rem;line-height:1.4;flex-shrink:0;}
+    .highlight-box{background:rgba(212,255,63,.05);border:1px solid rgba(212,255,63,.2);border-radius:12px;padding:18px 20px;margin:16px 0;}
+    .highlight-box p{color:var(--text);font-size:.9rem;margin:0;}
+    .highlight-box strong{color:var(--accent);}
+    code{font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--accent-2);background:#0E1014;padding:2px 7px;border-radius:4px;}
+    @media(max-width:900px){.priv-grid{grid-template-columns:1fr;}.priv-sidebar{position:static;}}
+  </style>
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+<a class="logo" href="/pt/"><div class="logo-mark">SF</div>SENSFLOW</a>
+<div class="nav-links"><a href="/pt/">Início</a><a href="/pt/sensitivity-converter">Conversor</a><a href="/pt/ads-converter">ADS / Scope</a><a href="/pt/about">Sobre</a><a href="/pt/contact">Contato</a><a class="active" href="/pt/privacy">Privacidade</a></div>
+<div class="lang-switch"><button class="lang-opt active" data-lang="pt"><span class="flag">🇧🇷</span><span class="code">PT</span></button><button class="lang-opt" data-lang="en"><span class="flag">🇺🇸</span><span class="code">EN</span></button><button class="lang-opt" data-lang="es"><span class="flag">🇪🇸</span><span class="code">ES</span></button></div>
+<a class="nav-cta" href="/pt/sensitivity-converter">Abrir Conversor</a>
+</div>
+</nav>
+<header class="priv-hero">
+<div class="wrap">
+<span class="eyebrow" style="margin-bottom:18px;display:inline-flex;"><span class="dot"></span> Transparência</span>
+<h1>Política de <span>Privacidade</span></h1>
+<p style="color:var(--muted);max-width:540px;margin-top:12px;">Entenda exatamente quais dados coletamos (spoiler: quase nenhum), como funcionamos e seus direitos.</p>
+<p class="update">Última atualização: julho de 2026</p>
+</div>
+</header>
+<section class="priv-body">
+<div class="wrap priv-grid">
+<!-- Sidebar -->
+<aside class="priv-sidebar">
+<h4>Nesta página</h4>
+<nav>
+<a class="active" href="#resumo">Resumo rápido</a>
+<a href="#coleta">O que coletamos</a>
+<a href="#localStorage">Dados locais</a>
+<a href="#terceiros">Terceiros</a>
+<a href="#cookies">Cookies</a>
+<a href="#direitos">Seus direitos</a>
+<a href="#contato">Contato</a>
+</nav>
+</aside>
+<!-- Content -->
+<div>
+<div class="priv-section" id="resumo">
+<h2>Resumo rápido</h2>
+<div class="highlight-box">
+<p><strong>TL;DR:</strong> A SENSFLOW não coleta seus dados pessoais identificáveis. Suas configurações ficam salvas <strong>apenas no seu próprio navegador</strong>. O site pode exibir anúncios de terceiros, mas não compartilhamos dados pessoais com anunciantes nem criamos perfis de usuário para fins publicitários.</p>
+</div>
+<p>Esta página existe para ser transparente sobre como o site funciona tecnicamente e quais dados, se algum, passam por nossos sistemas.</p>
+</div>
+<div class="priv-section" id="coleta">
+<h2>O que coletamos</h2>
+<p>As ferramentas da SENSFLOW rodam diretamente no seu navegador. Isso significa que <strong>não processamos seus dados de sensibilidade em servidores próprios</strong> — os cálculos acontecem localmente, no seu dispositivo.</p>
+<p>Não coletamos:</p>
+<ul>
+<li>Nome, e-mail ou qualquer dado de identificação</li>
+<li>Configurações de sensibilidade ou perfis enviados para servidores</li>
+<li>Histórico de conversões ou uso das ferramentas</li>
+<li>Endereço IP (além do que qualquer servidor web registra automaticamente em logs temporários)</li>
+</ul>
+</div>
+<div class="priv-section" id="localStorage">
+<h2>Dados locais (localStorage)</h2>
+<p>As funcionalidades de "Minha Sensibilidade Universal" e "Meu ADS Universal" usam a API <code>localStorage</code> do seu navegador para salvar preferências.</p>
+<p>Isso significa que:</p>
+<ul>
+<li>Os dados ficam <strong>exclusivamente no seu dispositivo</strong></li>
+<li>Não são transmitidos para nenhum servidor</li>
+<li>Você pode apagar a qualquer momento usando o botão "Limpar" no painel ou limpando os dados do site nas configurações do navegador</li>
+<li>Não são compartilhados entre dispositivos diferentes</li>
+</ul>
+<p>As chaves armazenadas são: <code>sensflow_profile</code> (sensibilidade hipfire) e <code>sensflow_ads_profile</code> (configurações ADS).</p>
+</div>
+<div class="priv-section" id="terceiros">
+<h2>Serviços de terceiros</h2>
+<p>O site carrega as seguintes fontes externas:</p>
+<ul>
+<li><strong>Google Fonts</strong> — para carregar as tipografias Rajdhani, Inter e JetBrains Mono. O Google pode registrar que seu IP fez uma requisição para os servidores de fontes. Consulte a <a href="https://policies.google.com/privacy" style="color:var(--accent-2);" target="_blank">política do Google</a> para mais detalhes.</li>
+</ul>
+<p>O site pode utilizar redes de anúncios de terceiros (como Google AdSense) para exibir publicidade. Essas redes podem usar cookies próprios para personalizar anúncios com base em visitas anteriores. Você pode gerenciar essas preferências nas configurações do seu navegador ou via <a href="https://optout.aboutads.info" style="color:var(--accent-2);" target="_blank">opt-out de anúncios</a>.</p><p>Não utilizamos Google Analytics ou Meta Pixel para rastreamento de comportamento de usuários.</p>
+</div>
+<div class="priv-section" id="cookies">
+<h2>Cookies</h2>
+<p>A SENSFLOW <strong>não usa cookies</strong>. Nenhum cookie é definido pelo site. As preferências são salvas via <code>localStorage</code>, que é tecnicamente diferente de cookies e não é enviado automaticamente em requisições HTTP.</p>
+</div>
+<div class="priv-section" id="direitos">
+<h2>Seus direitos</h2>
+<p>Como não coletamos dados pessoais identificáveis, não há um perfil seu para acessar, corrigir ou excluir em nossos sistemas.</p>
+<p>Para apagar os dados salvos localmente no seu navegador:</p>
+<ul>
+<li>Use os botões <strong>"Limpar"</strong> nos painéis de perfil do site</li>
+<li>Ou acesse as configurações do seu navegador → Privacidade → Dados do site → SENSFLOW → Excluir</li>
+</ul>
+</div>
+<div class="priv-section" id="contato">
+<h2>Contato</h2>
+<p>Dúvidas sobre privacidade, erros nos valores de yaw dos jogos ou sugestões de funcionalidades? Entre em contato:</p>
+<div class="highlight-box">
+<p>📧 <strong>contato@sensflow.tech</strong><br/>
+<span style="font-size:.82rem;color:var(--muted);">Respondemos em até 48 horas nos dias úteis.</span></p>
+</div>
+<p>Esta política pode ser atualizada ocasionalmente. Mudanças significativas serão indicadas pela data de "Última atualização" no topo desta página.</p>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="wrap">
+<div class="footer-grid">
+<a class="logo" href="/pt/"><div class="logo-mark">SF</div>SENSFLOW</a>
+<div class="footer-links">
+<div class="footer-col">
+<h4>Ferramentas</h4>
+<a href="/pt/sensitivity-converter">Conversor Hipfire</a>
+<a href="/pt/ads-converter">Conversão ADS</a>
+<a href="/pt/sensitivity-converter#edpi">Calculadora eDPI</a>
+</div>
+<div class="footer-col">
+<h4>Site</h4>
+<a href="/pt/">Início</a>
+<a href="/pt/about">Sobre nós</a>
+<a href="/pt/contact">Contato</a>
+<a href="/pt/privacy">Política de Privacidade</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 SENSFLOW. Todos os direitos reservados.</span>
+<span>Feito para quem joga com precisão.</span>
+</div>
+</div>
+</footer>
+<script src="/js/lang-detect.js?v=4"></script>
+<script src="/js/lang-switch.js?v=4"></script>
+</body>
+</html>

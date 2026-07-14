@@ -1,0 +1,45 @@
+/* ══════════════════════════════════════
+   SELETOR DE IDIOMA — 3 bandeiras visíveis
+   ══════════════════════════════════════ */
+.lang-switch {
+  display: flex;
+  gap: 4px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 4px;
+}
+.lang-opt {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  padding: 6px 10px;
+  border-radius: 7px;
+  font-size: .78rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all .18s;
+  line-height: 1;
+}
+.lang-opt .flag { font-size: 1.05rem; line-height: 1; }
+.lang-opt:hover { color: var(--text); background: rgba(255,255,255,.05); }
+.lang-opt.active {
+  color: #0A0C0F;
+  background: var(--accent);
+}
+.lang-opt.active .code { font-weight: 700; }
+
+@media (max-width: 1050px) {
+  .lang-opt .code { display: none; }
+  .lang-opt { padding: 6px 8px; }
+}
+
+/* Ajuste do nav com o seletor de idioma */
+.nav-inner { gap: 18px; }
+.nav-inner .nav-links { margin-right: auto; margin-left: 30px; }
+.nav-inner .lang-switch { flex-shrink: 0; }
+.nav-inner .nav-cta { flex-shrink: 0; }

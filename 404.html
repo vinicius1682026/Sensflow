@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Página não encontrada | SENSFLOW</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=4">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png?v=4">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4">
+  <link rel="shortcut icon" href="/favicon.ico?v=4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4">
+  <link rel="manifest" href="/site.webmanifest">
+
+
+  <meta name="robots" content="noindex, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=4">
+  <style>
+    .nf { min-height:100vh; display:flex; flex-direction:column; align-items:center;
+          justify-content:center; gap:26px; padding:24px; text-align:center; }
+    .nf-code { font-family:'JetBrains Mono',monospace; font-size:5.5rem; font-weight:600;
+               color:var(--accent); line-height:1; letter-spacing:-.02em; }
+    .nf h1 { font-size:1.6rem; }
+    .nf p  { color:var(--muted); font-size:.95rem; max-width:420px; }
+    .nf-actions { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; }
+    .nf-cross { position:relative; width:78px; height:78px; margin-bottom:6px; }
+    .nf-cross span { position:absolute; background:var(--accent-2); opacity:.7; }
+    .nf-cross .h { width:78px; height:2px; top:38px; left:0; }
+    .nf-cross .v { height:78px; width:2px;  left:38px; top:0; }
+    .nf-cross .r { position:absolute; inset:0; border:1.5px dashed var(--border); border-radius:50%; }
+  </style>
+</head>
+<body>
+  <main class="nf">
+    <div class="nf-cross"><div class="r"></div><span class="h"></span><span class="v"></span></div>
+    <div class="nf-code">404</div>
+    <div>
+      <h1 data-i18n="title">Página não encontrada</h1>
+      <p data-i18n="text">Essa mira errou o alvo. A página que você procura não existe ou foi movida.</p>
+    </div>
+    <div class="nf-actions">
+      <a href="/pt/" class="btn-primary" id="nfHome" data-i18n="home">Voltar ao início</a>
+      <a href="/pt/sensitivity-converter" class="btn-ghost" id="nfConv" data-i18n="conv">Abrir conversor</a>
+    </div>
+  </main>
+
+  <script>
+  (function () {
+    var I18N = {
+      pt: { title:"Página não encontrada",
+            text:"Essa mira errou o alvo. A página que você procura não existe ou foi movida.",
+            home:"Voltar ao início", conv:"Abrir conversor" },
+      en: { title:"Page not found",
+            text:"That shot missed the target. The page you're looking for doesn't exist or was moved.",
+            home:"Back to home", conv:"Open converter" },
+      es: { title:"Página no encontrada",
+            text:"Ese disparo falló. La página que buscas no existe o fue movida.",
+            home:"Volver al inicio", conv:"Abrir conversor" }
+    };
+
+    /* idioma: pela URL → preferência salva → navegador → pt */
+    var m = location.pathname.match(/^\/(pt|en|es)\//);
+    var lang = m && m[1];
+    if (!lang) { try { lang = localStorage.getItem("sf_lang"); } catch (e) {} }
+    if (!lang) {
+      var n = (navigator.languages || [navigator.language || "pt"])[0].toLowerCase().split("-")[0];
+      lang = I18N[n] ? n : "pt";
+    }
+    if (!I18N[lang]) lang = "pt";
+
+    document.documentElement.lang = lang === "pt" ? "pt-BR" : lang;
+    var t = I18N[lang];
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      el.textContent = t[el.getAttribute("data-i18n")];
+    });
+    document.getElementById("nfHome").href = "/" + lang + "/";
+    document.getElementById("nfConv").href = "/" + lang + "/sensitivity-converter";
+  })();
+  </script>
+</body>
+</html>

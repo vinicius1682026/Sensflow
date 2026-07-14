@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacto — Sugiere un Juego | SENSFLOW</title>
+<!-- Favicon -->
+<link href="/favicon.svg?v=4" rel="icon" type="image/svg+xml"/>
+<link href="/favicon-96x96.png?v=4" rel="icon" sizes="96x96" type="image/png"/>
+<link href="/favicon-48x48.png?v=4" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/favicon-32x32.png?v=4" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png?v=4" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/favicon.ico?v=4" rel="shortcut icon"/>
+<link href="/apple-touch-icon.png?v=4" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<link href="https://sensflow.tech/pt/contact" hreflang="pt-BR" rel="alternate"/><link href="https://sensflow.tech/en/contact" hreflang="en" rel="alternate"/><link href="https://sensflow.tech/es/contact" hreflang="es" rel="alternate"/><link href="https://sensflow.tech/pt/contact" hreflang="x-default" rel="alternate"/>
+<!-- hreflang — SEO Internacional -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="/css/style.css?v=4" rel="stylesheet"/>
+<!-- SEO -->
+<meta content="Ponte en contacto con SENSFLOW. Sugiere un nuevo juego para el conversor de sensibilidad, reporta errores o envía comentarios." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://sensflow.tech/es/contact" rel="canonical"/>
+<meta content="Contacto | SENSFLOW" property="og:title"/>
+<meta content="Sugiere un juego, reporta errores o envía comentarios al equipo SENSFLOW." property="og:description"/>
+<meta content="https://sensflow.tech/es/contact" property="og:url"/>
+<meta content="SENSFLOW" property="og:site_name"/>
+<style>
+    /* ── Contact page styles ── */
+    .contact-hero {
+      padding: 80px 0 50px;
+      text-align: center;
+    }
+    .contact-hero h1 { font-size: 2.8rem; margin-bottom: 12px; }
+    .contact-hero h1 span { color: var(--accent); }
+    .contact-hero p { color: var(--muted); max-width: 520px; margin: 12px auto 0; font-size: 1rem; }
+
+    /* ── Two-col layout ── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 56px;
+      align-items: start;
+      padding: 40px 0 100px;
+    }
+
+    /* ── Info sidebar ── */
+    .contact-info { display: grid; gap: 18px; }
+    .contact-info-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+    }
+    .contact-info-card .ci-icon {
+      width: 38px; height: 38px;
+      border-radius: 9px;
+      background: rgba(212,255,63,.08);
+      border: 1px solid rgba(212,255,63,.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+      margin-bottom: 14px;
+    }
+    .contact-info-card h4 { font-size: 1rem; margin-bottom: 6px; }
+    .contact-info-card p  { font-size: .85rem; color: var(--muted); line-height: 1.6; }
+    .contact-info-card a  { color: var(--accent-2); }
+    .contact-email {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .9rem;
+      color: var(--accent);
+      background: rgba(212,255,63,.06);
+      border: 1px solid rgba(212,255,63,.2);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    /* ── Form card ── */
+    .form-card {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 32px;
+      position: relative;
+    }
+    .form-card::before {
+      content: "";
+      position: absolute; top: 0; left: 24px; right: 24px; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212,255,63,.5), transparent);
+    }
+    .form-card h3 { font-size: 1.25rem; margin-bottom: 24px; }
+
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block;
+      font-size: .7rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      margin-bottom: 7px;
+    }
+    .form-group label .req { color: var(--accent); margin-left: 2px; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: #0E1014;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 12px 14px;
+      border-radius: 9px;
+      font-size: .92rem;
+      font-family: 'Inter', sans-serif;
+      transition: border-color .2s, box-shadow .2s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent-2);
+      box-shadow: 0 0 0 3px rgba(63,224,255,.08);
+    }
+    .form-group textarea {
+      min-height: 110px;
+      resize: vertical;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: #3a3f47; }
+
+    /* select arrow */
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23878E9C' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 36px;
+    }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--accent);
+      color: #0A0C0F;
+      font-weight: 700;
+      padding: 15px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      font-family: 'Rajdhani', sans-serif;
+      letter-spacing: .03em;
+      margin-top: 6px;
+      transition: transform .15s, box-shadow .15s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,255,63,.22); }
+    .btn-submit:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+
+    /* ── Success / Error states ── */
+    .form-alert {
+      display: none;
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-top: 16px;
+      font-size: .88rem;
+      align-items: center;
+      gap: 10px;
+    }
+    .form-alert.success {
+      background: rgba(212,255,63,.07);
+      border: 1px solid rgba(212,255,63,.3);
+      color: var(--accent);
+    }
+    .form-alert.error {
+      background: rgba(255,80,80,.07);
+      border: 1px solid rgba(255,80,80,.3);
+      color: #ff8080;
+    }
+    .form-alert.show { display: flex; }
+
+    /* ── Key placeholder ── */
+    .key-notice {
+      background: rgba(63,224,255,.05);
+      border: 1px solid rgba(63,224,255,.2);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 20px;
+      font-size: .8rem;
+      color: var(--muted);
+    }
+    .key-notice code {
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--accent-2);
+      background: rgba(63,224,255,.07);
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+<a class="logo" href="/es/"><div class="logo-mark">SF</div>SENSFLOW</a>
+<div class="nav-links"><a href="/es/">Inicio</a><a href="/es/sensitivity-converter">Conversor</a><a href="/es/ads-converter">ADS / Scope</a><a href="/es/about">Acerca de</a><a class="active" href="/es/contact">Contacto</a><a href="/es/privacy">Privacidad</a></div>
+<div class="lang-switch"><button class="lang-opt" data-lang="pt"><span class="flag">🇧🇷</span><span class="code">PT</span></button><button class="lang-opt" data-lang="en"><span class="flag">🇺🇸</span><span class="code">EN</span></button><button class="lang-opt active" data-lang="es"><span class="flag">🇪🇸</span><span class="code">ES</span></button></div>
+<a class="nav-cta" href="/es/sensitivity-converter">Abrir Conversor</a>
+</div>
+</nav>
+<!-- HERO -->
+<header class="contact-hero">
+<div class="wrap">
+<span class="eyebrow" style="margin-bottom:18px;display:inline-flex;"><span class="dot"></span> Contáctanos</span>
+<h1>Sugiere un juego o <span>envía comentarios</span></h1>
+<p>¿Falta algún juego en el conversor? ¿Encontraste un valor incorrecto? ¿Tienes una sugerencia? Nos encanta escucharte.</p>
+</div>
+</header>
+<!-- CONTENT -->
+<section>
+<div class="wrap contact-grid">
+<!-- Info sidebar -->
+<div class="contact-info">
+<div class="contact-info-card">
+<div class="ci-icon">🎮</div>
+<h4>Sugerir nuevo juego</h4>
+<p>¿Quieres un juego específico en el conversor? Envíanos el nombre — buscamos el yaw correcto y lo añadimos.</p>
+</div>
+<div class="contact-info-card">
+<div class="ci-icon">⚠️</div>
+<h4>Reportar error de conversión</h4>
+<p>Si los valores de sensibilidad parecen incorrectos para algún juego, dinos cuál juego y qué resultado esperabas.</p>
+</div>
+<div class="contact-info-card">
+<div class="ci-icon">💡</div>
+<h4>Sugerencia de función</h4>
+<p>¿Tienes una idea para mejorar el sitio? Todo comentario es bienvenido.</p>
+</div>
+<div class="contact-info-card">
+<div class="ci-icon">📧</div>
+<h4>Correo directo</h4>
+<p>¿Prefieres escribir directamente?</p>
+<span class="contact-email">contato@sensflow.tech</span>
+</div>
+</div>
+<!-- Form -->
+<div class="form-card">
+<h3>Enviar mensaje</h3>
+<!-- ⚠️ INSTRUÇÃO: substitua SUA_CHAVE_AQUI pela access key do web3forms.com -->
+<div class="key-notice">
+        ⚙️ Reemplaza <code>SUA_CHAVE_AQUI</code> con tu clave gratuita de
+        <a href="https://web3forms.com" style="color:var(--accent-2);" target="_blank">web3forms.com</a>
+</div>
+<form action="https://api.web3forms.com/submit" id="contactForm" method="POST" novalidate="">
+<!-- Web3Forms: access key -->
+<input name="access_key" type="hidden" value="SUA_CHAVE_AQUI"/>
+<!-- Web3Forms: assunto do e-mail recebido -->
+<input name="subject" type="hidden" value="SENSFLOW — Nuevo mensaje / sugerencia de juego"/>
+<!-- Web3Forms: redirecionar após envio (opcional, JS cuida disso) -->
+<input name="redirect" type="hidden" value="false"/>
+<!-- Honeypot anti-spam -->
+<input autocomplete="off" name="botcheck" style="display:none" tabindex="-1" type="checkbox"/>
+<div class="form-row">
+<div class="form-group">
+<label>Nombre <span class="req">*</span></label>
+<input autocomplete="name" name="name" placeholder="Tu nombre" required="" type="text"/>
+</div>
+<div class="form-group">
+<label>Correo <span class="req">*</span></label>
+<input autocomplete="email" name="email" placeholder="tu@correo.com" required="" type="email"/>
+</div>
+</div>
+<div class="form-group">
+<label>Tipo de mensaje <span class="req">*</span></label>
+<select name="tipo" required="">
+<option disabled="" selected="" value="">Selecciona el motivo</option>
+<option value="Sugestão de jogo">🎮 Sugerencia de juego</option>
+<option value="Erro de conversão">⚠️ Error de conversión</option>
+<option value="Sugestão de funcionalidade">💡 Sugerencia de función</option>
+<option value="Outro">📝 Otro asunto</option>
+</select>
+</div>
+<div class="form-group">
+<label>Juego sugerido / relacionado</label>
+<input name="jogo" placeholder="p. ej. Palworld, Battlefield 6, The Finals..." type="text"/>
+</div>
+<div class="form-group">
+<label>Mensaje <span class="req">*</span></label>
+<textarea name="message" placeholder="Describe tu sugerencia, el error encontrado o cualquier otro comentario..." required=""></textarea>
+</div>
+<button class="btn-submit" id="btnSubmit" type="submit">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24" width="18"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          Enviar mensaje
+        </button>
+<div class="form-alert success" id="alertSuccess">
+          ✓ ¡Mensaje enviado! Responderemos en 48h.
+        </div>
+<div class="form-alert error" id="alertError">
+          ✗ Error al enviar. Inténtalo de nuevo o usa el correo directo.
+        </div>
+</form>
+</div>
+</div>
+</section>
+<footer>
+<div class="wrap">
+<div class="footer-grid">
+<a class="logo" href="/es/"><div class="logo-mark">SF</div>SENSFLOW</a>
+<div class="footer-links">
+<div class="footer-col">
+<h4>Herramientas</h4>
+<a href="/es/sensitivity-converter">Conversor Hipfire</a>
+<a href="/es/ads-converter">Conversión ADS</a>
+<a href="/es/sensitivity-converter#edpi">Calculadora eDPI</a>
+</div>
+<div class="footer-col">
+<h4>Sitio</h4>
+<a href="/es/">Inicio</a>
+<a href="/es/about">Sobre nosotros</a>
+<a href="/es/contact">Contacto</a>
+<a href="/es/privacy">Política de Privacidad</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 SENSFLOW. Todos los derechos reservados.</span>
+<span>Hecho para quienes juegan con precisión.</span>
+</div>
+</div>
+</footer>
+<script>
+/* ══════════════════════════════════════
+   SENSFLOW — Contact Form Handler
+   Web3Forms AJAX submission
+   ══════════════════════════════════════ */
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const btn     = document.getElementById("btnSubmit");
+  const success = document.getElementById("alertSuccess");
+  const error   = document.getElementById("alertError");
+  const form    = this;
+
+  // Reset alerts
+  success.classList.remove("show");
+  error.classList.remove("show");
+
+  // Loading state
+  btn.disabled = true;
+  btn.innerHTML = `
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      style="animation:spin .8s linear infinite">
+      <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
+    </svg>
+    Enviando...`;
+
+  const style = document.createElement("style");
+  style.textContent = "@keyframes spin{to{transform:rotate(360deg)}}";
+  document.head.appendChild(style);
+
+  try {
+    const data     = new FormData(form);
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: data,
+    });
+    const result = await response.json();
+
+    if (result.success) {
+      success.classList.add("show");
+      form.reset();
+    } else {
+      throw new Error(result.message || "Error desconocido");
+    }
+  } catch (err) {
+    console.error(err);
+    error.classList.add("show");
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = `
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+      </svg>
+      Enviar mensaje`;
+  }
+});
+</script>
+<script src="/js/lang-detect.js?v=4"></script>
+<script src="/js/lang-switch.js?v=4"></script>
+</body>
+</html>

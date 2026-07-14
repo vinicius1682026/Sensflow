@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENSFLOW — Conversor de Sensibilidade de Mouse | Sensitivity Converter</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=4">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png?v=4">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4">
+  <link rel="shortcut icon" href="/favicon.ico?v=4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4">
+  <link rel="manifest" href="/site.webmanifest">
+
+
+
+  <meta name="description" content="Converta sua sensibilidade de mouse entre 35+ jogos FPS. Convert your mouse sensitivity across 35+ FPS games. Convierte tu sensibilidad entre 35+ juegos FPS.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sensflow.tech/pt/">
+
+  <!-- hreflang — SEO Internacional -->
+  <link rel="alternate" hreflang="pt-BR"     href="https://sensflow.tech/pt/" />
+  <link rel="alternate" hreflang="en"        href="https://sensflow.tech/en/" />
+  <link rel="alternate" hreflang="es"        href="https://sensflow.tech/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://sensflow.tech/pt/" />
+
+  <!-- Fallback sem JS: manda para PT após 0s -->
+  <noscript><meta http-equiv="refresh" content="0; url=/pt/"></noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=4">
+
+  <style>
+    .router {
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 34px; padding: 24px;
+    }
+    .router-logo {
+      width: 62px; height: 62px; border-radius: 16px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: flex; align-items: center; justify-content: center;
+      color: #0A0C0F; font-weight: 700; font-size: 1.35rem;
+      font-family: 'Rajdhani', sans-serif;
+    }
+    .router h1 { font-size: 1.8rem; text-align: center; }
+    .router h1 span { color: var(--accent); }
+    .router-sub { color: var(--muted); font-size: .9rem; text-align: center; }
+
+    .lang-grid { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+    .lang-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 30px;
+      min-width: 158px;
+      text-align: center;
+      transition: transform .2s, border-color .2s;
+    }
+    .lang-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+    .lang-flag { font-size: 1.7rem; }
+    .lang-name { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 1.05rem; margin-top: 8px; }
+    .lang-native { font-size: .74rem; color: var(--muted); margin-top: 2px; }
+
+    .router-note {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: .68rem; color: var(--muted);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .router-note .dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--accent); box-shadow: 0 0 7px var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <main class="router">
+    <div class="router-logo">SF</div>
+
+    <div>
+      <h1>SENS<span>FLOW</span></h1>
+      <p class="router-sub">Escolha seu idioma · Choose your language · Elige tu idioma</p>
+    </div>
+
+    <div class="lang-grid">
+      <a href="/pt/" class="lang-card" hreflang="pt-BR">
+        <div class="lang-flag">🇧🇷</div>
+        <div class="lang-name">Português</div>
+        <div class="lang-native">Brasil</div>
+      </a>
+      <a href="/en/" class="lang-card" hreflang="en">
+        <div class="lang-flag">🇺🇸</div>
+        <div class="lang-name">English</div>
+        <div class="lang-native">United States</div>
+      </a>
+      <a href="/es/" class="lang-card" hreflang="es">
+        <div class="lang-flag">🇪🇸</div>
+        <div class="lang-name">Español</div>
+        <div class="lang-native">España</div>
+      </a>
+    </div>
+
+    <p class="router-note"><span class="dot"></span> Redirecionando automaticamente…</p>
+  </main>
+
+  <script src="/js/lang-detect.js?v=4"></script>
+</body>
+</html>

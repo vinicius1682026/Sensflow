@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sensflow.tech/sitemap.xml
