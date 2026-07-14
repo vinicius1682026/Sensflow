@@ -1,0 +1,88 @@
+# ══════════════════════════════════════════
+#  SENSFLOW — Apache .htaccess (Hostinger)
+#  Estrutura: /pt/  /en/  /es/
+# ══════════════════════════════════════════
+
+Options -Indexes +FollowSymLinks
+RewriteEngine On
+
+# ── HTTPS forçado ──
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ── www → sem www ──
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# ══════════════════════════════════════════
+#  DETECÇÃO AUTOMÁTICA DE IDIOMA (raiz "/")
+#  Lê o header Accept-Language do navegador.
+#  Usa 302 (temporário) porque a resposta varia
+#  por usuário — 301 seria cacheado errado.
+# ══════════════════════════════════════════
+
+# Espanhol → /es/
+RewriteCond %{HTTP:Accept-Language} ^es [NC]
+RewriteRule ^$ /es/ [R=302,L]
+
+# Inglês → /en/
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^$ /en/ [R=302,L]
+
+# Português → /pt/
+RewriteCond %{HTTP:Accept-Language} ^pt [NC]
+RewriteRule ^$ /pt/ [R=302,L]
+
+# Qualquer outro idioma → /pt/ (x-default)
+RewriteRule ^$ /pt/ [R=302,L]
+
+# Avisa proxies/CDN que a resposta muda conforme o idioma
+<IfModule mod_headers.c>
+  <FilesMatch "^index\.html$">
+    Header append Vary "Accept-Language"
+  </FilesMatch>
+</IfModule>
+
+# ══════════════════════════════════════════
+#  URLs LIMPAS
+# ══════════════════════════════════════════
+
+# .html → URL limpa (301 permanente)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# /pt/ → /pt/index.html
+RewriteRule ^(pt|en|es)/?$ $1/index.html [L]
+
+# /pt/pagina → /pt/pagina.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(pt|en|es)/([^/]+)/?$ $1/$2.html [L]
+
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# ══════════════════════════════════════════
+#  PERFORMANCE & SEGURANÇA
+# ══════════════════════════════════════════
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css               "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html              "access plus 1 hour"
+  ExpiresByType image/png              "access plus 1 year"
+  ExpiresByType image/jpeg             "access plus 1 year"
+  ExpiresByType image/svg+xml          "access plus 1 year"
+  ExpiresByType image/webp             "access plus 1 year"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript text/xml application/json image/svg+xml
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
