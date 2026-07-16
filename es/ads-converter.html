@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
@@ -51,19 +52,19 @@
 </script>
 <title>Conversión ADS y Scope — Multiplicador de Mira FPS | SENSFLOW</title>
 <!-- Favicon -->
-<link href="/favicon.svg?v=7" rel="icon" type="image/svg+xml"/>
-<link href="/favicon-96x96.png?v=7" rel="icon" sizes="96x96" type="image/png"/>
-<link href="/favicon-48x48.png?v=7" rel="icon" sizes="48x48" type="image/png"/>
-<link href="/favicon-32x32.png?v=7" rel="icon" sizes="32x32" type="image/png"/>
-<link href="/favicon-16x16.png?v=7" rel="icon" sizes="16x16" type="image/png"/>
-<link href="/favicon.ico?v=7" rel="shortcut icon"/>
-<link href="/apple-touch-icon.png?v=7" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon.svg?v=10" rel="icon" type="image/svg+xml"/>
+<link href="/favicon-96x96.png?v=10" rel="icon" sizes="96x96" type="image/png"/>
+<link href="/favicon-48x48.png?v=10" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/favicon-32x32.png?v=10" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png?v=10" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/favicon.ico?v=10" rel="shortcut icon"/>
+<link href="/apple-touch-icon.png?v=10" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/site.webmanifest" rel="manifest"/>
 <link href="https://sensflow.tech/pt/ads-converter" hreflang="pt-BR" rel="alternate"/><link href="https://sensflow.tech/en/ads-converter" hreflang="en" rel="alternate"/><link href="https://sensflow.tech/es/ads-converter" hreflang="es" rel="alternate"/><link href="https://sensflow.tech/pt/ads-converter" hreflang="x-default" rel="alternate"/>
 <!-- hreflang — SEO Internacional -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
-<link href="/css/style.css?v=7" rel="stylesheet"/>
+<link href="/css/style.css?v=10" rel="stylesheet"/>
 <style>
     .ads-hero{padding:72px 0 50px;}
     .ads-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
@@ -94,7 +95,7 @@
 <div class="nav-inner">
 <a class="logo" href="/es/"><div class="logo-mark">SF</div>SENSFLOW</a>
 <div class="nav-links"><a href="/es/">Inicio</a><a href="/es/sensitivity-converter">Conversor</a><a class="active" href="/es/ads-converter">ADS / Scope</a><a href="/es/about">Acerca de</a><a href="/es/contact">Contacto</a><a href="/es/privacy">Privacidad</a></div>
-<div class="lang-switch"><button class="lang-opt" data-lang="pt"><span class="flag">🇧🇷</span><span class="code">PT</span></button><button class="lang-opt" data-lang="en"><span class="flag">🇺🇸</span><span class="code">EN</span></button><button class="lang-opt active" data-lang="es"><span class="flag">🇪🇸</span><span class="code">ES</span></button></div>
+<div class="theme-switch"><button aria-label="Oscuro" class="theme-opt active" data-theme="dark" title="Oscuro"></button><button aria-label="Cyberpunk" class="theme-opt" data-theme="cyber" title="Cyberpunk"></button><button aria-label="Pastel" class="theme-opt" data-theme="pastel" title="Pastel"></button></div><div class="lang-switch"><button class="lang-opt" data-lang="pt"><span class="flag">🇧🇷</span><span class="code">PT</span></button><button class="lang-opt" data-lang="en"><span class="flag">🇺🇸</span><span class="code">EN</span></button><button class="lang-opt active" data-lang="es"><span class="flag">🇪🇸</span><span class="code">ES</span></button></div>
 <a class="nav-cta" href="/es/sensitivity-converter">Conversor Hipfire</a>
 </div>
 </nav>
@@ -130,11 +131,11 @@
 <div class="field"><label>Juego de destino</label><select id="toGame"></select></div>
 </div>
 <div class="field-row">
-<div class="field"><label>Sens hipfire</label><input id="fromSens" min="0" step="0.01" type="number" value="0.40"/></div>
-<div class="field"><label>DPI de origen</label><input id="fromDpi" min="100" step="50" type="number" value="800"/></div>
+<div class="field"><label>Sens hipfire</label><input id="fromSens" inputmode="decimal" min="0" pattern="[0-9]*" step="0.01" type="number" value="0.40"/></div>
+<div class="field"><label>DPI de origen</label><input id="fromDpi" inputmode="decimal" min="100" pattern="[0-9]*" step="50" type="number" value="800"/></div>
 </div>
 <div class="field-row">
-<div class="field"><label>DPI de destino</label><input id="toDpi" min="100" step="50" type="number" value="800"/></div>
+<div class="field"><label>DPI de destino</label><input id="toDpi" inputmode="decimal" min="100" pattern="[0-9]*" step="50" type="number" value="800"/></div>
 <div class="field" style="display:flex;align-items:flex-end;">
 <button class="btn-ghost" id="btnReset" style="width:100%;padding:11px 12px;font-size:.88rem;">↺ Restablecer</button>
 </div>
@@ -142,7 +143,7 @@
 <div class="section-divider"><span>Multiplicador ADS</span></div>
 <div class="field">
 <label>Multiplicador de mira (ADS) <button class="info-btn" id="btnExplain2">i</button></label>
-<input id="adsMult" max="2.00" min="0.01" step="0.01" type="number" value="1.00"/>
+<input id="adsMult" inputmode="decimal" max="2.00" min="0.01" pattern="[0-9]*" step="0.01" type="number" value="1.00"/>
 </div>
 <div style="margin-top:8px;">
 <p style="font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Preajustes comunes</p>
@@ -233,13 +234,13 @@
 </div>
 <div class="pf-row">
 <div class="pf-field"><label>Juego favorito</label><select id="adsUnivGame"></select></div>
-<div class="pf-field"><label>Sensibilidad</label><input id="adsUnivSens" step="0.01" type="number" value="0.40"/></div>
-<div class="pf-field"><label>DPI del ratón</label><input id="adsUnivDpi" step="50" type="number" value="800"/></div>
+<div class="pf-field"><label>Sensibilidad</label><input id="adsUnivSens" inputmode="decimal" pattern="[0-9]*" step="0.01" type="number" value="0.40"/></div>
+<div class="pf-field"><label>DPI del ratón</label><input id="adsUnivDpi" inputmode="decimal" pattern="[0-9]*" step="50" type="number" value="800"/></div>
 </div>
 <div class="ads-mult-row">
 <div class="pf-field" style="flex:1;">
 <label>Multiplicador ADS</label>
-<input id="adsUnivMult" max="2.00" min="0.01" step="0.01" type="number" value="1.00"/>
+<input id="adsUnivMult" inputmode="decimal" max="2.00" min="0.01" pattern="[0-9]*" step="0.01" type="number" value="1.00"/>
 </div>
 <div style="flex:2;">
 <p class="ch-label" style="margin-bottom:6px;">Preajustes rápidos</p>
@@ -575,7 +576,7 @@ document.getElementById("btnClearAds").addEventListener("click",()=>{
   compute();
 })();
 </script>
-<script src="/js/lang-detect.js?v=7"></script>
-<script src="/js/lang-switch.js?v=7"></script>
-</body>
+<script src="/js/lang-detect.js?v=10"></script>
+<script src="/js/lang-switch.js?v=10"></script>
+<script src="/js/theme.js?v=10"></script><script src="/js/copy-result.js?v=10"></script><script src="/js/converter-persist.js?v=10"></script></body>
 </html>

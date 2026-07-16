@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
@@ -56,26 +57,79 @@
 </script>
 <title>SENSFLOW — Conversor de Sensibilidad de Ratón Gratis | Herramientas FPS</title>
 <!-- Favicon -->
-<link href="/favicon.svg?v=7" rel="icon" type="image/svg+xml"/>
-<link href="/favicon-96x96.png?v=7" rel="icon" sizes="96x96" type="image/png"/>
-<link href="/favicon-48x48.png?v=7" rel="icon" sizes="48x48" type="image/png"/>
-<link href="/favicon-32x32.png?v=7" rel="icon" sizes="32x32" type="image/png"/>
-<link href="/favicon-16x16.png?v=7" rel="icon" sizes="16x16" type="image/png"/>
-<link href="/favicon.ico?v=7" rel="shortcut icon"/>
-<link href="/apple-touch-icon.png?v=7" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon.svg?v=10" rel="icon" type="image/svg+xml"/>
+<link href="/favicon-96x96.png?v=10" rel="icon" sizes="96x96" type="image/png"/>
+<link href="/favicon-48x48.png?v=10" rel="icon" sizes="48x48" type="image/png"/>
+<link href="/favicon-32x32.png?v=10" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png?v=10" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/favicon.ico?v=10" rel="shortcut icon"/>
+<link href="/apple-touch-icon.png?v=10" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/site.webmanifest" rel="manifest"/>
 <link href="https://sensflow.tech/pt/" hreflang="pt-BR" rel="alternate"/><link href="https://sensflow.tech/en/" hreflang="en" rel="alternate"/><link href="https://sensflow.tech/es/" hreflang="es" rel="alternate"/><link href="https://sensflow.tech/pt/" hreflang="x-default" rel="alternate"/>
 <!-- hreflang — SEO Internacional -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/>
-<link href="/css/style.css?v=7" rel="stylesheet"/>
-</head>
+<link href="/css/style.css?v=10" rel="stylesheet"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es el valor de yaw de un juego?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yaw es cuántos grados gira la cámara por cada conteo del ratón. Cada motor usa un valor distinto — por ejemplo, 0.022 en Source (CS2, Apex) y 0.07 en Valorant. Ese número es lo que hace precisa la conversión, en vez de un multiplicador genérico."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué significa cm/360°?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es la distancia física, en centímetros, que necesitas mover el ratón para girar 360° en el juego. Al ser una medida del mundo real, es la misma en cualquier título — por eso la usamos como base de la conversión."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es el eDPI y para qué sirve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "eDPI es la sensibilidad efectiva: DPI × sensibilidad del juego. Sirve para comparar configuraciones entre jugadores con distinto DPI. Solo tiene sentido comparar eDPI dentro del mismo juego."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Necesito el mismo DPI en ambos juegos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. El conversor tiene campos separados de DPI de origen y destino, y compensa la diferencia automáticamente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La conversión de ADS funciona igual?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Casi. El ADS depende del multiplicador de mira de cada juego. Nuestro conversor ADS calcula el cm/360° del hipfire, lo divide por el multiplicador y lo convierte al juego de destino."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué mi mira se siente distinta aun con la sens convertida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La conversión preserva la distancia de rotación, pero el FOV, la aceleración del ratón y la relación de aspecto también afectan la sensación. Si el FOV difiere mucho, la percepción cambia aunque el cm/360° sea idéntico."
+      }
+    }
+  ]
+}</script></head>
 <body>
 <nav>
 <div class="nav-inner">
 <a class="logo" href="/es/"><div class="logo-mark">SF</div>SENSFLOW</a>
 <div class="nav-links"><a class="active" href="/es/">Inicio</a><a href="/es/sensitivity-converter">Conversor</a><a href="/es/ads-converter">ADS / Scope</a><a href="/es/about">Acerca de</a><a href="/es/contact">Contacto</a><a href="/es/privacy">Privacidad</a></div>
-<div class="lang-switch"><button class="lang-opt" data-lang="pt"><span class="flag">🇧🇷</span><span class="code">PT</span></button><button class="lang-opt" data-lang="en"><span class="flag">🇺🇸</span><span class="code">EN</span></button><button class="lang-opt active" data-lang="es"><span class="flag">🇪🇸</span><span class="code">ES</span></button></div>
+<div class="theme-switch"><button aria-label="Oscuro" class="theme-opt active" data-theme="dark" title="Oscuro"></button><button aria-label="Cyberpunk" class="theme-opt" data-theme="cyber" title="Cyberpunk"></button><button aria-label="Pastel" class="theme-opt" data-theme="pastel" title="Pastel"></button></div><div class="lang-switch"><button class="lang-opt" data-lang="pt"><span class="flag">🇧🇷</span><span class="code">PT</span></button><button class="lang-opt" data-lang="en"><span class="flag">🇺🇸</span><span class="code">EN</span></button><button class="lang-opt active" data-lang="es"><span class="flag">🇪🇸</span><span class="code">ES</span></button></div>
 <a class="nav-cta" href="/es/sensitivity-converter">Abrir Conversor</a>
 </div>
 </nav>
@@ -130,7 +184,7 @@
 <a class="btn-primary" href="/es/sensitivity-converter">Empezar ahora</a>
 </div>
 </section>
-<footer>
+<section class="faq-section" id="faq"><div class="wrap"><div class="section-head"><h2>Preguntas frecuentes</h2></div><div class="faq-list"><div class="faq-item"><button class="faq-q" type="button">¿Qué es el valor de yaw de un juego?</button><div class="faq-a"><p>Yaw es cuántos grados gira la cámara por cada conteo del ratón. Cada motor usa un valor distinto — por ejemplo, <code>0.022</code> en Source (CS2, Apex) y <code>0.07</code> en Valorant. Ese número es lo que hace precisa la conversión, en vez de un multiplicador genérico.</p></div></div><div class="faq-item"><button class="faq-q" type="button">¿Qué significa cm/360°?</button><div class="faq-a"><p>Es la distancia física, en centímetros, que necesitas mover el ratón para girar 360° en el juego. Al ser una medida del mundo real, es la misma en cualquier título — por eso la usamos como base de la conversión.</p></div></div><div class="faq-item"><button class="faq-q" type="button">¿Qué es el eDPI y para qué sirve?</button><div class="faq-a"><p>eDPI es la sensibilidad efectiva: DPI × sensibilidad del juego. Sirve para comparar configuraciones entre jugadores con distinto DPI. Solo tiene sentido comparar eDPI dentro del mismo juego.</p></div></div><div class="faq-item"><button class="faq-q" type="button">¿Necesito el mismo DPI en ambos juegos?</button><div class="faq-a"><p>No. El conversor tiene campos separados de DPI de origen y destino, y compensa la diferencia automáticamente.</p></div></div><div class="faq-item"><button class="faq-q" type="button">¿La conversión de ADS funciona igual?</button><div class="faq-a"><p>Casi. El ADS depende del multiplicador de mira de cada juego. Nuestro conversor ADS calcula el cm/360° del hipfire, lo divide por el multiplicador y lo convierte al juego de destino.</p></div></div><div class="faq-item"><button class="faq-q" type="button">¿Por qué mi mira se siente distinta aun con la sens convertida?</button><div class="faq-a"><p>La conversión preserva la distancia de rotación, pero el FOV, la aceleración del ratón y la relación de aspecto también afectan la sensación. Si el FOV difiere mucho, la percepción cambia aunque el cm/360° sea idéntico.</p></div></div></div></div></section><footer>
 <div class="wrap">
 <div class="footer-grid">
 <a class="logo" href="/es/"><div class="logo-mark">SF</div>SENSFLOW</a>
@@ -156,7 +210,7 @@
 </div>
 </div>
 </footer>
-<script src="/js/lang-detect.js?v=7"></script>
-<script src="/js/lang-switch.js?v=7"></script>
-</body>
+<script src="/js/lang-detect.js?v=10"></script>
+<script src="/js/lang-switch.js?v=10"></script>
+<script src="/js/theme.js?v=10"></script><script src="/js/faq.js?v=10"></script></body>
 </html>
